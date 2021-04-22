@@ -1,6 +1,6 @@
 #!/bin/bash
 
-input=chloroform_solv_500
+input=biphenyl_1_in_chloroform_solv_500
 
 N_OMP=1
 N_MPI=1
