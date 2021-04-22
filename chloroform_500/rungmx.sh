@@ -7,6 +7,7 @@ N_MPI=1
 
 LANG=C
 
+module load gromacs/2019.6-cpu
 #module load gromacs/2020.6/intel
 #module load scl/devtoolset-9 intel_parallelstudio/2019update5
 #source ~/bin/x86_64/gromacs/2020.6/intel/bin/GMXRC.bash
