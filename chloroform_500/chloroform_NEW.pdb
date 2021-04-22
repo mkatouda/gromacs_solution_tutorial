@@ -1,0 +1,7 @@
+REMARK chloroform_NEW.pdb created by acpype (v: 2020-10-24T12:16:34CEST) on Thu Apr 22 19:11:22 2021
+ATOM      1  C   UNL Z   1       1.096   0.022   0.017  1.00  0.00           C
+ATOM      2  CL  UNL Z   1       0.496  -0.506  -1.561  1.00  0.00           C
+ATOM      3  CL1 UNL Z   1       0.496  -1.052   1.289  1.00  0.00           C
+ATOM      4  CL2 UNL Z   1       2.865   0.044   0.021  1.00  0.00           C
+ATOM      5  H   UNL Z   1       0.732   1.032   0.210  1.00  0.00           H
+END
