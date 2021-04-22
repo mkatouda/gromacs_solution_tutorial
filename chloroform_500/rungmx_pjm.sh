@@ -1,10 +1,11 @@
 #!/bin/bash
 
 #PJM -L "rscunit=ito-a"
-#PJM -L "rscgrp=ito-m"
-#PJM -L "vnode=8"
+#PJM -L "rscgrp=ito-a-co190023"
+# PJM -L "rscgrp=ito-ss"
+#PJM -L "vnode=1"
 #PJM -L "vnode-core=36"
-#PJM -L "elapse=1:00:00"
+#PJM -L "elapse=0:30:00"
 #PJM -j
 #PJM -S
 
