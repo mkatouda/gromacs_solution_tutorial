@@ -1,0 +1,35 @@
+; chloroform_GMX.itp created by acpype (v: 2020-10-24T12:16:34CEST) on Fri Apr 23 00:49:00 2021
+
+;[ atomtypes ]
+;;name   bond_type     mass     charge   ptype   sigma         epsilon       Amb
+; c3       c3          0.00000  0.00000   A     3.39967e-01   4.57730e-01 ; 1.91  0.1094
+; cl       cl          0.00000  0.00000   A     3.47094e-01   1.10876e+00 ; 1.95  0.2650
+; h3       h3          0.00000  0.00000   A     2.11499e-01   6.56888e-02 ; 1.19  0.0157
+
+[ moleculetype ]
+;name            nrexcl
+ SOL              3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
+     1   c3     1   SOL     C    1     0.224500     12.01000 ; qtot 0.225
+     2   cl     1   SOL    CL    2    -0.114400     35.45000 ; qtot 0.110
+     3   cl     1   SOL   CL1    3    -0.114400     35.45000 ; qtot -0.004
+     4   cl     1   SOL   CL2    4    -0.114400     35.45000 ; qtot -0.119
+     5   h3     1   SOL     H    5     0.118700      1.00800 ; qtot 0.000
+
+[ bonds ]
+;   ai     aj funct   r             k
+     1      2   1    1.8045e-01    2.2284e+05 ;      C - CL    
+     1      3   1    1.8045e-01    2.2284e+05 ;      C - CL1   
+     1      4   1    1.8045e-01    2.2284e+05 ;      C - CL2   
+     1      5   1    1.0949e-01    2.7891e+05 ;      C - H     
+
+[ angles ]
+;   ai     aj     ak    funct   theta         cth
+     2      1      3      1    1.0933e+02    4.5271e+02 ;     CL - C      - CL1   
+     2      1      4      1    1.0933e+02    4.5271e+02 ;     CL - C      - CL2   
+     2      1      5      1    1.0766e+02    3.3388e+02 ;     CL - C      - H     
+     3      1      4      1    1.0933e+02    4.5271e+02 ;    CL1 - C      - CL2   
+     3      1      5      1    1.0766e+02    3.3388e+02 ;    CL1 - C      - H     
+     4      1      5      1    1.0766e+02    3.3388e+02 ;    CL2 - C      - H     

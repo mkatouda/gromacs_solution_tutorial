@@ -2,7 +2,7 @@
 
 res_solute=BIP
 model_solute_gro=biphenyl_GMX.gro
-model_solvent_gro=eq.gro
+model_solvent_gro=chloroform_solv_500.gro
 model_solvent_top=chloroform_solv_500.top
 model_solution_gro=biphenyl_1_in_chloroform_solv_500.gro
 model_solution_top=biphenyl_1_in_chloroform_solv_500.top
