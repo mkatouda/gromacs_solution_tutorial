@@ -34,7 +34,7 @@ EOF
 packmol < ${packmol_inp}
 gmx editconf -f ${model_pdb} -o ${model_gro} -box ${boxsize_x_nm} ${boxsize_y_nm} ${boxsize_z_nm}
 cat <<EOF > input.awk
-{if(\$1 == "${molname}" && \$2 == 1) {print \$1, ${nmol}} else {print \$0}}
+{if(\$1 == "${molname}" && \$2 == 1) {printf "SOL %10s\n", ${nmol}} else {print \$0}}
 EOF
 awk -f input.awk ${molname}_GMX.top > ${model_top}
 rm input.awk
